@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Two-step conversion flow">
+<title>Two-step conversion flow</title>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#3a3a38"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="900" height="680" fill="#ffffff"/>
+<text x="450" y="32" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">Two-step conversion sequence</text>
+<text x="250" y="60" font-size="13" fill="#52514e" text-anchor="middle" font-weight="700">Model equation</text>
+<text x="720" y="60" font-size="13" fill="#52514e" text-anchor="middle" font-weight="700">Worked example (Vin = 1.234 V)</text>
+<rect x="40" y="74" width="420" height="58" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="250.0" y="98.4" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">1  Input</text>
+<text x="250.0" y="116.3" font-size="13" font-weight="400" fill="#0b0b0b" text-anchor="middle">Vin ∈ [0, Vref],  Vref = 2 V</text>
+<polyline points="462,103 568,103" fill="none" stroke="#52514e" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<rect x="570" y="74" width="300" height="58" rx="8" fill="#ffffff" stroke="#2a78d6" stroke-width="2"/>
+<text x="720.0" y="107.2" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">Vin = 1.234 V</text>
+<polyline points="250,132 250,154" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="156" width="420" height="58" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="250.0" y="180.4" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">2  Coarse quantization</text>
+<text x="250.0" y="198.3" font-size="13" font-weight="400" fill="#0b0b0b" text-anchor="middle">Dcoarse = min(⌊Vin / LSB_c⌋, 15)</text>
+<polyline points="462,185 568,185" fill="none" stroke="#52514e" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<rect x="570" y="156" width="300" height="58" rx="8" fill="#ffffff" stroke="#2a78d6" stroke-width="2"/>
+<text x="720.0" y="189.2" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">⌊9.872⌋ = 9  (1001b)</text>
+<polyline points="250,214 250,236" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="238" width="420" height="58" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="250.0" y="262.4" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">3  DAC reconstruction</text>
+<text x="250.0" y="280.3" font-size="13" font-weight="400" fill="#0b0b0b" text-anchor="middle">VDAC = Dcoarse · LSB_c</text>
+<polyline points="462,267 568,267" fill="none" stroke="#52514e" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<rect x="570" y="238" width="300" height="58" rx="8" fill="#ffffff" stroke="#2a78d6" stroke-width="2"/>
+<text x="720.0" y="271.2" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">9 × 0.125 V = 1.125 V</text>
+<polyline points="250,296 250,318" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="320" width="420" height="58" rx="8" fill="#fdeee7" stroke="#eb6834" stroke-width="2"/>
+<text x="250.0" y="344.4" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">4  Residue generation</text>
+<text x="250.0" y="362.3" font-size="13" font-weight="400" fill="#0b0b0b" text-anchor="middle">Vin − VDAC  ∈ [0, LSB_c)</text>
+<polyline points="462,349 568,349" fill="none" stroke="#52514e" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<rect x="570" y="320" width="300" height="58" rx="8" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<text x="720.0" y="353.2" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">1.234 − 1.125 = 0.109 V</text>
+<polyline points="250,378 250,400" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="402" width="420" height="58" rx="8" fill="#fdeee7" stroke="#eb6834" stroke-width="2"/>
+<text x="250.0" y="426.4" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">5  Residue amplification</text>
+<text x="250.0" y="444.3" font-size="13" font-weight="400" fill="#0b0b0b" text-anchor="middle">Vres = (Vin − VDAC) × 16</text>
+<polyline points="462,431 568,431" fill="none" stroke="#52514e" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<rect x="570" y="402" width="300" height="58" rx="8" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<text x="720.0" y="435.2" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">0.109 × 16 = 1.744 V</text>
+<polyline points="250,460 250,482" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="484" width="420" height="58" rx="8" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="250.0" y="508.4" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">6  Fine quantization</text>
+<text x="250.0" y="526.3" font-size="13" font-weight="400" fill="#0b0b0b" text-anchor="middle">Dfine = min(⌊Vres / LSB_c⌋, 15)</text>
+<polyline points="462,513 568,513" fill="none" stroke="#52514e" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<rect x="570" y="484" width="300" height="58" rx="8" fill="#ffffff" stroke="#1a9e6f" stroke-width="2"/>
+<text x="720.0" y="517.2" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">⌊13.952⌋ = 13  (1101b)</text>
+<polyline points="250,542 250,564" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="566" width="420" height="58" rx="8" fill="#ecebf8" stroke="#4a3aa7" stroke-width="2"/>
+<text x="250.0" y="590.4" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">7  Digital combination</text>
+<text x="250.0" y="608.3" font-size="13" font-weight="400" fill="#0b0b0b" text-anchor="middle">Dout = Dcoarse × 16 + Dfine</text>
+<polyline points="462,595 568,595" fill="none" stroke="#52514e" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<rect x="570" y="566" width="300" height="58" rx="8" fill="#ffffff" stroke="#4a3aa7" stroke-width="2"/>
+<text x="720.0" y="599.2" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">144 + 13 = 157  (1001 1101b)</text>
+<text x="450" y="660" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400" font-style="italic">LSB_c = Vref / 2^4 = 0.125 V.  Check: ⌊1.234 V / 7.8125 mV⌋ = ⌊157.95⌋ = 157, identical to a direct 8-bit quantizer.</text>
+</svg>

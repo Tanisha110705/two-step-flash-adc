@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="455" viewBox="0 0 1160 455" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Two-step ADC block diagram">
+<title>Two-step ADC block diagram</title>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#3a3a38"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="1160" height="455" fill="#ffffff"/>
+<text x="550" y="30" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700">8-bit two-step (sub-ranging) flash ADC — behavioral model</text>
+<text x="48" y="260" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700">Vin</text>
+<text x="48" y="278" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">0–2 V</text>
+<polyline points="72,255 508,255" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<circle cx="110" cy="255" r="4" fill="#3a3a38"/>
+<polyline points="110,255 110,125 148,125" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="150" y="80" width="200" height="90" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="250.0" y="113.3" font-size="15" font-weight="700" fill="#0b0b0b" text-anchor="middle">Coarse ADC</text>
+<text x="250.0" y="130.6" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="middle">4-bit flash · 15 comparators</text>
+<text x="250.0" y="146.8" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="middle">⌊Vin / LSB_c⌋, clamp 15</text>
+<polyline points="350,125 438,125" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<text x="394" y="116" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="700">Dcoarse</text>
+<rect x="440" y="80" width="180" height="90" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="530.0" y="113.3" font-size="15" font-weight="700" fill="#0b0b0b" text-anchor="middle">4-bit DAC</text>
+<text x="530.0" y="130.6" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="middle">VDAC = Dcoarse · LSB_c</text>
+<text x="530.0" y="146.8" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="middle">LSB_c = 0.125 V</text>
+<polyline points="530,170 530,231" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<text x="540" y="205" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="700">VDAC</text>
+<circle cx="394" cy="125" r="4" fill="#3a3a38"/>
+<polyline points="394,125 394,58 850,58 850,78" fill="none" stroke="#4a3aa7" stroke-width="2" marker-end="url(#arr)"/>
+<circle cx="530" cy="255" r="22" fill="#fdeee7" stroke="#eb6834" stroke-width="2"/>
+<text x="530" y="262" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">Σ</text>
+<text x="497" y="247" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700">+</text>
+<text x="518" y="229" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700">−</text>
+<polyline points="552,255 638,255" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<text x="596" y="245" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Vin − VDAC</text>
+<text x="596" y="275" font-size="10" fill="#52514e" text-anchor="middle" font-weight="400">0 … 0.125 V</text>
+<polygon points="640,215 640,295 720,255" fill="#fdeee7" stroke="#eb6834" stroke-width="2"/>
+<text x="667" y="261" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700">×16</text>
+<text x="680" y="318" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="700">Residue amplifier</text>
+<text x="680" y="334" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">gain 2^4 = 16</text>
+<polyline points="720,255 788,255" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<text x="754" y="245" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="700">Vres</text>
+<text x="754" y="275" font-size="10" fill="#52514e" text-anchor="middle" font-weight="400">0 … 2 V</text>
+<rect x="790" y="210" width="180" height="90" rx="8" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="880.0" y="243.3" font-size="15" font-weight="700" fill="#0b0b0b" text-anchor="middle">Fine ADC</text>
+<text x="880.0" y="260.6" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="middle">4-bit flash · 15 comparators</text>
+<text x="880.0" y="276.8" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="middle">⌊Vres / LSB_c⌋, clamp 15</text>
+<polyline points="910,210 910,162" fill="none" stroke="#4a3aa7" stroke-width="2" marker-end="url(#arr)"/>
+<text x="918" y="192" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="700">Dfine</text>
+<rect x="790" y="80" width="180" height="80" rx="8" fill="#ecebf8" stroke="#4a3aa7" stroke-width="2"/>
+<text x="880.0" y="116.4" font-size="15" font-weight="700" fill="#0b0b0b" text-anchor="middle">Digital combiner</text>
+<text x="880.0" y="133.7" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="middle">Dout = 16·Dcoarse + Dfine</text>
+<polyline points="970,120 1040,120" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<text x="1048" y="116" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="700">Dout[7:0]</text>
+<text x="1048" y="134" font-size="11" fill="#52514e" text-anchor="start" font-weight="400">codes 0–255</text>
+<rect x="70" y="378" width="18" height="14" rx="3" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="96" y="390" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">Coarse path (upper 4 bits)</text>
+<rect x="320" y="378" width="18" height="14" rx="3" fill="#fdeee7" stroke="#eb6834" stroke-width="2"/>
+<text x="346" y="390" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">Residue path</text>
+<rect x="570" y="378" width="18" height="14" rx="3" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="596" y="390" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">Fine path (lower 4 bits)</text>
+<rect x="820" y="378" width="18" height="14" rx="3" fill="#ecebf8" stroke="#4a3aa7" stroke-width="2"/>
+<text x="846" y="390" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">Digital recombination</text>
+<text x="580" y="430" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400" font-style="italic">All blocks are ideal in the MATLAB model (floor / min arithmetic). No sample-and-hold, offset, mismatch, gain error or noise is modeled.</text>
+</svg>

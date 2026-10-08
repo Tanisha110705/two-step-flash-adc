@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="344" viewBox="0 0 780 344" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Digital output code reconstruction">
+<title>Digital output code reconstruction</title>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#3a3a38"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="780" height="344" fill="#ffffff"/>
+<text x="390" y="30" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700">Digital output reconstruction: Dout = Dcoarse × 16 + Dfine</text>
+<text x="60" y="82" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="700">Dcoarse = 9</text>
+<rect x="60" y="92" width="44" height="44" rx="5" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="82.0" y="121" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<rect x="108" y="92" width="44" height="44" rx="5" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="130.0" y="121" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">0</text>
+<rect x="156" y="92" width="44" height="44" rx="5" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="178.0" y="121" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">0</text>
+<rect x="204" y="92" width="44" height="44" rx="5" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="226.0" y="121" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<text x="60" y="168" font-size="12" fill="#52514e" text-anchor="start" font-weight="400">× 16  (shift left by 4)</text>
+<text x="510" y="82" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="700">Dfine = 13</text>
+<rect x="510" y="92" width="44" height="44" rx="5" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="532.0" y="121" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<rect x="558" y="92" width="44" height="44" rx="5" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="580.0" y="121" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<rect x="606" y="92" width="44" height="44" rx="5" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="628.0" y="121" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">0</text>
+<rect x="654" y="92" width="44" height="44" rx="5" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="676.0" y="121" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<polyline points="250,140 290,208" fill="none" stroke="#2a78d6" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="560,140 490,208" fill="none" stroke="#1a9e6f" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="200" y="212" width="44" height="44" rx="5" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="222.0" y="241" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<rect x="248" y="212" width="44" height="44" rx="5" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="270.0" y="241" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">0</text>
+<rect x="296" y="212" width="44" height="44" rx="5" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="318.0" y="241" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">0</text>
+<rect x="344" y="212" width="44" height="44" rx="5" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="366.0" y="241" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<rect x="392" y="212" width="44" height="44" rx="5" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="414.0" y="241" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<rect x="440" y="212" width="44" height="44" rx="5" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="462.0" y="241" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<rect x="488" y="212" width="44" height="44" rx="5" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="510.0" y="241" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">0</text>
+<rect x="536" y="212" width="44" height="44" rx="5" fill="#e5f6ef" stroke="#1a9e6f" stroke-width="2"/>
+<text x="558.0" y="241" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<text x="222" y="274" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">b7</text>
+<text x="270" y="274" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">b6</text>
+<text x="318" y="274" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">b5</text>
+<text x="366" y="274" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">b4</text>
+<text x="414" y="274" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">b3</text>
+<text x="462" y="274" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">b2</text>
+<text x="510" y="274" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">b1</text>
+<text x="558" y="274" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">b0</text>
+<text x="390" y="302" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700">Dout[7:0] = 1001 1101b = 144 + 13 = 157   (valid range 0–255)</text>
+<text x="390" y="324" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400" font-style="italic">Each stage is clamped to 0–15, so the fine code never carries into the coarse bits.</text>
+</svg>

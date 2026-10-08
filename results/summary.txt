@@ -1,0 +1,19 @@
+Resolution N                 : 8 bit
+Stage resolution N_stage     : 4 bit (coarse) + 4 bit (fine)
+Reference / input range      : 0 to 2 V
+LSB = Vref/2^N               : 0.0078125 V (7.8125 mV)
+LSB_c = Vref/2^N_stage       : 0.1250 V
+Residue gain 2^N_stage       : 16
+Input sweep                  : 2001 points, step 0.0010 V
+Output code range            : 0 to 255
+Distinct output codes        : 256 of 256
+Missing codes                : 0
+Monotonic (sweep)            : 1
+Measured step widths (mV)    : [7 8]
+DNL min / max (LSB)          : -0.1040 / +0.0240
+max |DNL| (LSB)              : 0.1040
+INL min / max (LSB)          : +0.0000 / +0.1200
+max |INL| (LSB)              : 0.1200
+Flash comparators 2^N-1      : 255
+Two-step comparators 2(2^Ns-1): 30
+Comparator-count reduction   : 88.2 %

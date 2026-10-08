@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="326" viewBox="0 0 900 326" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Flash versus two-step comparator count">
+<title>Flash versus two-step comparator count</title>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#3a3a38"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="900" height="326" fill="#ffffff"/>
+<text x="450" y="32" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">Comparator count for 8-bit resolution</text>
+<text x="185" y="92" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="700">Full flash</text>
+<text x="185" y="110" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">one 8-bit stage</text>
+<rect x="200" y="76" width="600.0" height="40" rx="4" fill="#2a78d6"/>
+<text x="790.0" y="101" font-size="14" fill="#ffffff" text-anchor="end" font-weight="700">2^8 − 1 = 255</text>
+<text x="185" y="172" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="700">Two-step</text>
+<text x="185" y="190" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">two 4-bit stages</text>
+<rect x="200" y="156" width="35.3" height="40" rx="4" fill="#2a78d6"/>
+<rect x="237.3" y="156" width="35.3" height="40" rx="4" fill="#1a9e6f"/>
+<text x="284.5882352941177" y="174" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="700">2 × (2^4 − 1) = 30</text>
+<text x="284.5882352941177" y="192" font-size="11.5" fill="#52514e" text-anchor="start" font-weight="400">15 coarse + 15 fine</text>
+<line x1="200.0" y1="210" x2="200.0" y2="216" stroke="#52514e" stroke-width="1.5"/>
+<text x="200.0" y="232" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">0</text>
+<line x1="317.6" y1="210" x2="317.6" y2="216" stroke="#52514e" stroke-width="1.5"/>
+<text x="317.6470588235294" y="232" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">50</text>
+<line x1="435.3" y1="210" x2="435.3" y2="216" stroke="#52514e" stroke-width="1.5"/>
+<text x="435.29411764705884" y="232" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">100</text>
+<line x1="552.9" y1="210" x2="552.9" y2="216" stroke="#52514e" stroke-width="1.5"/>
+<text x="552.9411764705883" y="232" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">150</text>
+<line x1="670.6" y1="210" x2="670.6" y2="216" stroke="#52514e" stroke-width="1.5"/>
+<text x="670.5882352941177" y="232" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">200</text>
+<line x1="800.0" y1="210" x2="800.0" y2="216" stroke="#52514e" stroke-width="1.5"/>
+<text x="800.0" y="232" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">255</text>
+<line x1="200" y1="210" x2="800" y2="210" stroke="#52514e" stroke-width="1.5"/>
+<text x="500" y="252" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">comparators</text>
+<text x="450" y="286" font-size="12.5" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-style="italic">(255 − 30) / 255 = 88.2 % fewer comparators — an architectural count, not a measured area or power figure.</text>
+<text x="450" y="306" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400" font-style="italic">The two-step design adds a DAC, a subtractor and a ×16 residue amplifier that the full flash does not need.</text>
+</svg>

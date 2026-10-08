@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Coarse and fine quantization ranges">
+<title>Coarse and fine quantization ranges</title>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#3a3a38"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="960" height="440" fill="#ffffff"/>
+<text x="480" y="30" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700">Coarse code → DAC → VDAC, and how the fine stage re-uses the full range</text>
+<rect x="40" y="50" width="150" height="44" rx="8" fill="#ffffff" stroke="#3a3a38" stroke-width="2"/>
+<text x="115.0" y="75.9" font-size="13" font-weight="700" fill="#0b0b0b" text-anchor="middle">Vin = 1.234 V</text>
+<polyline points="190,72 220,72" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="220" y="50" width="150" height="44" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="295.0" y="75.9" font-size="13" font-weight="700" fill="#0b0b0b" text-anchor="middle">Coarse ADC</text>
+<polyline points="370,72 400,72" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="400" y="50" width="150" height="44" rx="8" fill="#ffffff" stroke="#2a78d6" stroke-width="2"/>
+<text x="475.0" y="75.9" font-size="13" font-weight="700" fill="#0b0b0b" text-anchor="middle">Dcoarse = 9</text>
+<polyline points="550,72 580,72" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="580" y="50" width="150" height="44" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="655.0" y="75.9" font-size="13" font-weight="700" fill="#0b0b0b" text-anchor="middle">4-bit DAC</text>
+<polyline points="730,72 760,72" fill="none" stroke="#3a3a38" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="760" y="50" width="150" height="44" rx="8" fill="#ffffff" stroke="#2a78d6" stroke-width="2"/>
+<text x="835.0" y="75.9" font-size="13" font-weight="700" fill="#0b0b0b" text-anchor="middle">VDAC = 1.125 V</text>
+<text x="60" y="145" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="700">Input range 0–2 V: 16 coarse segments of LSB_c = 0.125 V</text>
+<rect x="60.0" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="86.25" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">0</text>
+<rect x="112.5" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="138.75" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">1</text>
+<rect x="165.0" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="191.25" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">2</text>
+<rect x="217.5" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="243.75" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">3</text>
+<rect x="270.0" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="296.25" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">4</text>
+<rect x="322.5" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="348.75" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">5</text>
+<rect x="375.0" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="401.25" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">6</text>
+<rect x="427.5" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="453.75" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">7</text>
+<rect x="480.0" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="506.25" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">8</text>
+<rect x="532.5" y="157" width="52.5" height="36" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="558.75" y="180" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="700">9</text>
+<rect x="585.0" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="611.25" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">10</text>
+<rect x="637.5" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="663.75" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">11</text>
+<rect x="690.0" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="716.25" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">12</text>
+<rect x="742.5" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="768.75" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">13</text>
+<rect x="795.0" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="821.25" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">14</text>
+<rect x="847.5" y="157" width="52.5" height="36" fill="#e8f1fc" stroke="#ffffff" stroke-width="2"/>
+<text x="873.75" y="180" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">15</text>
+<line x1="60.0" y1="193" x2="60.0" y2="199" stroke="#52514e" stroke-width="1.5"/>
+<text x="60.0" y="213" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">0.0 V</text>
+<line x1="270.0" y1="193" x2="270.0" y2="199" stroke="#52514e" stroke-width="1.5"/>
+<text x="270.0" y="213" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">0.5 V</text>
+<line x1="480.0" y1="193" x2="480.0" y2="199" stroke="#52514e" stroke-width="1.5"/>
+<text x="480.0" y="213" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">1.0 V</text>
+<line x1="690.0" y1="193" x2="690.0" y2="199" stroke="#52514e" stroke-width="1.5"/>
+<text x="690.0" y="213" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">1.5 V</text>
+<line x1="900.0" y1="193" x2="900.0" y2="199" stroke="#52514e" stroke-width="1.5"/>
+<text x="900.0" y="213" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">2.0 V</text>
+<line x1="578.3" y1="149" x2="578.3" y2="193" stroke="#eb6834" stroke-width="2.5"/>
+<text x="584.28" y="147" font-size="11.5" fill="#eb6834" text-anchor="start" font-weight="700">Vin = 1.234 V</text>
+<polyline points="532.5,221 60,308" fill="none" stroke="#52514e" stroke-width="1" stroke-dasharray="4 3"/>
+<polyline points="585.0,221 900,308" fill="none" stroke="#52514e" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="480" y="262" font-size="12.5" fill="#0b0b0b" text-anchor="middle" font-weight="700">segment 9 (1.125–1.25 V) − VDAC, then × 16</text>
+<text x="480" y="280" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">→ residue Vres spans the full 0–2 V again</text>
+<rect x="60.0" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="86.25" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">0</text>
+<rect x="112.5" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="138.75" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">1</text>
+<rect x="165.0" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="191.25" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">2</text>
+<rect x="217.5" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="243.75" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">3</text>
+<rect x="270.0" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="296.25" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">4</text>
+<rect x="322.5" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="348.75" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">5</text>
+<rect x="375.0" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="401.25" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">6</text>
+<rect x="427.5" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="453.75" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">7</text>
+<rect x="480.0" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="506.25" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">8</text>
+<rect x="532.5" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="558.75" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">9</text>
+<rect x="585.0" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="611.25" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">10</text>
+<rect x="637.5" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="663.75" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">11</text>
+<rect x="690.0" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="716.25" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">12</text>
+<rect x="742.5" y="312" width="52.5" height="36" fill="#1a9e6f" stroke="#ffffff" stroke-width="2"/>
+<text x="768.75" y="335" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="700">13</text>
+<rect x="795.0" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="821.25" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">14</text>
+<rect x="847.5" y="312" width="52.5" height="36" fill="#e5f6ef" stroke="#ffffff" stroke-width="2"/>
+<text x="873.75" y="335" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">15</text>
+<line x1="60.0" y1="348" x2="60.0" y2="354" stroke="#52514e" stroke-width="1.5"/>
+<text x="60.0" y="368" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">0.0 V</text>
+<line x1="270.0" y1="348" x2="270.0" y2="354" stroke="#52514e" stroke-width="1.5"/>
+<text x="270.0" y="368" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">0.5 V</text>
+<line x1="480.0" y1="348" x2="480.0" y2="354" stroke="#52514e" stroke-width="1.5"/>
+<text x="480.0" y="368" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">1.0 V</text>
+<line x1="690.0" y1="348" x2="690.0" y2="354" stroke="#52514e" stroke-width="1.5"/>
+<text x="690.0" y="368" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">1.5 V</text>
+<line x1="900.0" y1="348" x2="900.0" y2="354" stroke="#52514e" stroke-width="1.5"/>
+<text x="900.0" y="368" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">2.0 V</text>
+<line x1="792.5" y1="304" x2="792.5" y2="348" stroke="#eb6834" stroke-width="2.5"/>
+<text x="786.48" y="302" font-size="11.5" fill="#eb6834" text-anchor="end" font-weight="700">Vres = 1.744 V</text>
+<text x="60" y="394" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="400">Fine stage: 16 segments of 0.125 V on the amplified residue = 0.125 V / 16 = 7.8125 mV (1 LSB) referred to the input.</text>
+<text x="60" y="414" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="700">Result: Dcoarse = 9, Dfine = 13  →  Dout = 9 × 16 + 13 = 157.</text>
+</svg>

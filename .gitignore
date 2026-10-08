@@ -1,0 +1,17 @@
+# MATLAB / Octave
+*.asv
+*.mex*
+*.mat
+octave-workspace
+slprj/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
